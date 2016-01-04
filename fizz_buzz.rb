@@ -1,5 +1,4 @@
 class FizzBuzz
-
 # ruby -r "./fizz_buzz.rb" -e "FizzBuzz.fizz_buzz" to run from command line
   def self.fizz_buzz
     (1..100).each do |num|

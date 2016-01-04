@@ -9,12 +9,12 @@ class TestFizzBuzz < Test::Unit::TestCase
 
   def setup
     @output = StringIO.new()
-      $stdout = @output
-      FizzBuzz.fizz_buzz()
-      @output.rewind
-      @lines = @output.readlines.map {|str| str.chop}
-      $stdout = STDOUT
-      puts @lines[0]
+    $stdout = @output
+    FizzBuzz.fizz_buzz()
+    @output.rewind
+    @lines = @output.readlines.map {|str| str.chop}
+    $stdout = STDOUT
+    puts @lines[0]
   end
 
   test "should print 1 as the first line" do
